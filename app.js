@@ -38,7 +38,7 @@ function searchRepositories() {
                     autocompleteResults.appendChild(noResults);
                 } else {
                     data.items.slice(0, 5).forEach(repo => {
-                        const repoItem = document.createElement('div');
+                        const repoItem = document.createElement('li');
                         repoItem.classList.add('resultsAutocomplete')
                         repoItem.textContent = `${repo.name}`;
                         autocompleteResults.appendChild(repoItem);
@@ -54,7 +54,7 @@ function searchRepositories() {
 }
 
 function addRepositoryToList(repo) {
-    const addList = document.createElement('div');
+    const addList = document.createElement('li');
     addList.classList.add('addList');
     repositoriesList.appendChild(addList)
 
