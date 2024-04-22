@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C4C4C4;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1 {
+    font-size: 48px;
+}
+
+.searchInput{
+    width: 500px;
+    height: 61px;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.nothingFound{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 44px;
+    font-weight: 400;
+    font-size: 30px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.resultsAutocomplete{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 44px;
+    font-weight: 400;
+    font-size: 30px;
+    background-color: #E3E3E3;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.resultsAutocomplete:hover {
+    background-color: #65cdf9;
+}
+
+.addList {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 100px;
+    font-weight: 400;
+    font-size: 24px;
+    background-color: #E27BEB;
+    border: 1px solid black;
+}
+
+.deleteBtn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #E27BEB;
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+
+.deleteBtn::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    height: 56px;
+    background-color: red;
+    transform: rotate(48deg);
+  }
+  
+.deleteBtn::before{
+    content: "";
+    position: absolute;
+    right: 48%;
+    width: 3px;
+    height: 56px;
+    background-color: red;
+    transform: rotate(-48deg);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
